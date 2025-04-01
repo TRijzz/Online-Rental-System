@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRATA - Forgot Password</title>
+    <link rel="stylesheet" href="number.css">
+    <!-- Corrected Google Fonts link -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-container">
+        <nav class="top-nav">
+            <div class="logo">
+                <img src="path_to_your_logo.png" alt="PRATA Logo">
+                <a href="#" class="back-button">← Back</a>
+            </div>
+            <div class="nav-links">
+                <a href="signin.html">Home</a>
+                <a href="signup.html">Help</a>
+            </div>
+        </nav>
+
+        <div class="forgot-password-container">
+            <h2>Forgot Password</h2>
+            <p class="description">Make Selection</p>
+            <p class="sub-description">Select which contact detail you want to change password</p>
+            <div class="contact-option">
+                <label for="phone">Via SMS:</label>
+                <input type="tel" id="phone" placeholder="+977798**********" style="color: gray;">
+            </div>
+            <!-- Form with action to verification.html -->
+            <form action="verification.html" method="post">
+                <button type="submit" class="next-btn">Next</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

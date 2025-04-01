@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    background-image: url('C:/Users/trija/Downloads/MANSIONSS.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #1A2C50;
+    padding: 10px 20px;
+    color: #E4D7C4;
+    font-size: 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10; /* Ensure the nav bar stays on top */
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.back-button {
+    color: #ffffff; /* Dark blue color */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    top: 50px; /* Move closer to the top of the container */
+    left: 20px; /* Align towards the left */
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #E4D7C4;
+}
+
+.forgot-password-container {
+    width: 500px; /* Set the width to match the image size */
+    background-color: rgba(255, 255, 255, 0.5); /* 60% transparency */
+    padding: 40px; /* Increased padding */
+    border-radius: 10px; /* Set the border radius to match the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Increased shadow for more space */
+    backdrop-filter: blur(5px);
+    text-align: center;
+    position: absolute; /* Use absolute positioning */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust to center */
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.description {
+    margin-bottom: 20px; /* Increased margin for more space */
+    color: #333;
+}
+
+.sub-description {
+    margin-bottom: 10px; /* Adjusted margin for more space */
+    color: #333;
+}
+
+.contact-option {
+    margin-top: 30px; /* Increased top margin for more space */
+    text-align: left;
+}
+
+.contact-option label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.contact-option input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: left;
+    background-color: #f9f9f9; /* Light grey background for readonly input */
+    color: gray; /* Make the phone number grey */
+}
+
+.next-btn {
+    width: 144px; /* Dimensions 144 x 34 */
+    height: 34px; /* Dimensions 144 x 34 */
+    padding: 0;
+    background-color: #1A2C50; /* Button color */
+    color: #E4D7C4; /* Font color */
+    border: none;
+    border-radius: 9px; /* Corner radius 9% */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.next-btn:hover {
+    background-color: #165ccc; /* Background color on hover */
+}

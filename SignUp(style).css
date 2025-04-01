@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    background-image: url('C:/Users/trija/Downloads/MANSIONSS.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #1A2C50;
+    padding: 10px 20px;
+    color: #E4D7C4;
+    font-size: 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #E4D7C4;
+}
+
+.signup-container {
+    width: 502px; /* Set the width to match the image size */
+    background-color: rgba(255, 255, 255, 0.6); /* 60% transparency */
+    padding: 30px;
+    border-radius: 30px; /* Set the border radius to match the image */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    text-align: center;
+    position: relative;
+    top: 100px; /* Adjust this value to position the form below the nav bar */
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: left; /* Align text to the left */
+}
+
+.signup-btn {
+    width: 144px;
+    height: 34px;
+    padding: 0;
+    background-color: #1A2C50; /* Background color */
+    color: #E4D7C4; /* Font color */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.signup-btn:hover {
+    background-color: #165ccc;
+}
+
+.social-login {
+    margin: 25px 0;
+}
+
+.social-login button {
+    display: block;
+    width: 211px;
+    height: 34px;
+    padding: 0;
+    margin: 10px auto;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.social-login button:hover {
+    background-color: #444;
+}
+
+.google {
+    background-color: #1a73e8;
+}
+
+.google:hover {
+    background-color: #165ccc;
+}
+
+.facebook {
+    background-color: #4267b2;
+}
+
+.facebook:hover {
+    background-color: #3d5a98;
+}
+
+.apple {
+    background-color: #000;
+}
+
+.apple:hover {
+    background-color: #111;
+}
+
+.login-link {
+    margin-top: 20px;
+    color: #666;
+    text-align: center;
+}
+
+.login-link a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.login-link a:hover {
+    color: #333;
+}

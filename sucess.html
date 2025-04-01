@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Page</title>
+    <link rel="stylesheet" href="sucess.css">
+    <!-- Corrected Google Fonts link -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelector('.back-button').addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent the default anchor behavior
+                window.history.back(); // Go back to the previous page
+            });
+        });
+    </script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="PRATA Logo">
+      <a href="#" class="back-button">← Back</a>
+    </div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Help</a>
+    </div>
+  </nav>
+  <div class="container">
+    <h1>Success</h1>
+    <p>Password changed successfully.</p>
+    <!-- Ensures the button redirects to the signin page -->
+    <button onclick="location.href='signin.html'">Back to Login</button>
+  </div>
+</body>
+</html>

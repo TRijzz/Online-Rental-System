@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    background-image: url('C:/Users/trija/Downloads/MANSIONSS.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #1A2C50;
+    padding: 10px 20px;
+    color: #E4D7C4;
+    font-size: 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10; /* Ensure the nav bar stays on top */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.back-button {
+    color: white;
+    text-decoration: none;
+    font-weight: 500; /* Medium weight */
+    font-size: 16px;
+    position: fixed;
+    bottom: 650px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #E4D7C4;
+}
+
+.verification-container {
+    width: 500px; /* Set the width to match the image size */
+    background-color: rgba(255, 255, 255, 0.5); /* 80% transparency */
+    padding: 40px; /* Increased padding */
+    border-radius: 10px; /* Set the border radius to match the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Increased shadow for more space */
+    backdrop-filter: blur(5px);
+    text-align: center;
+    position: relative;
+    top: 50px; /* Adjust this value to position the form below the nav bar */
+    margin-top: 5px; /* Additional top margin for more space */
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.sub-description {
+    margin-bottom: 10px; /* Adjusted margin for more space */
+    color: #333;
+}
+
+.code-input {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-top: 30px; /* Increased top margin for more space */
+    text-align: center;
+}
+
+.code-box {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.code-char {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.next-btn {
+    width: 144px;
+    height: 34px;
+    background-color: #1A2C50;
+    color: #E4D7C4;
+    border: none;
+    border-radius: 9px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Add a small gap between the text box and the button */
+}
+
+.next-btn:hover {
+    background-color: #2C4371; /* Darker shade on hover */
+}
