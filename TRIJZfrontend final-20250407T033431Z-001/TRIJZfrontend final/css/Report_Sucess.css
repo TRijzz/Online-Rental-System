@@ -1,0 +1,31 @@
+/* Styles specific ONLY to the Success page */
+
+.success-container {
+    text-align: center;
+}
+
+.success-container h1 {
+    color: #28a745; /* Green color for success */
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.success-container p {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 30px; /* More space before button */
+}
+
+.success-container .success-icon {
+    font-size: 4em; /* Large icon */
+    color: #28a745; /* Green */
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.success-container .button-group a.btn-primary {
+    /* Ensures the link looks exactly like the button */
+    display: inline-block;
+    text-decoration: none;
+}

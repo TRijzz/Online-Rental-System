@@ -1,0 +1,171 @@
+/* --- Form Element Styles --- */
+.form-group {
+    margin-bottom: 20px; /* Increased spacing */
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px; /* Increased space */
+    color: #333;
+    font-weight: 600; /* Bolder labels */
+    font-size: 0.9em;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="tel"] {
+    width: 100%;
+    padding: 12px 15px; /* Adjusted padding */
+    border: 1px solid #ccc; /* Slightly darker border */
+    border-radius: 6px; /* Slightly more rounded */
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif; /* Ensure font */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #1A2C50;
+    box-shadow: 0 0 0 3px rgba(26, 44, 80, 0.15);
+    outline: none;
+}
+
+.form-group input::placeholder {
+    color: #aaa;
+}
+
+/* Readonly/Disabled styles */
+.form-group input[readonly],
+.form-group input:disabled {
+    background-color: #f2f2f2; /* Lighter grey */
+    color: #777;
+    cursor: not-allowed;
+}
+
+/* --- Button Styles --- */
+.btn {
+    display: inline-block; /* Allow margin auto for centering if needed */
+    padding: 10px 25px; /* Standard padding */
+    border: none;
+    border-radius: 8px; /* Consistent radius */
+    font-size: 16px;
+    font-weight: 600; /* Bolder buttons */
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    text-align: center;
+    min-width: 144px; /* Minimum width based on original designs */
+    height: 40px; /* Slightly taller */
+    line-height: 20px; /* Center text vertically */
+}
+
+.btn:active {
+    transform: scale(0.98); /* Slight press effect */
+}
+
+/* Primary Button (e.g., Sign In, Next, Continue) */
+.btn-primary {
+    background-color: #1A2C50;
+    color: #E4D7C4;
+}
+
+.btn-primary:hover {
+    background-color: #2C4371; /* Darker shade on hover */
+}
+
+/* Secondary Button (e.g., Cancel) */
+.btn-secondary {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.btn-secondary:hover {
+    background-color: #e0e0e0;
+}
+
+/* Link-style text (e.g., Forgot Password) */
+.form-link {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #1A2C50;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.form-link:hover {
+    text-decoration: underline;
+}
+
+/* Centered button container */
+.button-group {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column; /* Stack buttons if multiple */
+    align-items: center;
+    gap: 15px;
+}
+
+/* Social Login Buttons */
+.social-login {
+    margin: 25px 0;
+    text-align: center;
+}
+
+.social-login p {
+    margin-bottom: 15px;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.social-btn {
+    display: flex; /* Use flex to align icon and text */
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%; /* Make buttons full width within their container */
+    max-width: 250px; /* Control max width */
+    height: 40px;
+    padding: 0 15px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.social-btn .icon { /* Placeholder for potential icons */
+    font-weight: bold; /* Example */
+}
+
+.social-btn.google { background-color: #DB4437; }
+.social-btn.google:hover { background-color: #C33D2E; }
+.social-btn.facebook { background-color: #4267B2; }
+.social-btn.facebook:hover { background-color: #365899; }
+.social-btn.apple { background-color: #000000; }
+.social-btn.apple:hover { background-color: #222222; }
+
+/* Bottom Link (e.g., Don't have an account?) */
+.bottom-link {
+    margin-top: 30px;
+    color: #555;
+    text-align: center;
+    font-size: 0.95em;
+}
+
+.bottom-link a {
+    color: #1A2C50;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.bottom-link a:hover {
+    text-decoration: underline;
+}

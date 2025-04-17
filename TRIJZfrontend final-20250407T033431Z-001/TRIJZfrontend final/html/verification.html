@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRATA - Enter Verification Code</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/forms.css">
+    <link rel="stylesheet" href="../css/verification.css"> <!-- Specific styles for code input -->
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="logo">
+            <a href="forgot-options.html" class="back-button-link">← Back</a> <!-- Link back to options -->
+            <img src="../assets/images/logo.png" alt="PRATA Logo" class="logo-image">
+        </div>
+        <div class="nav-links">
+            <a href="signin.html" class="nav-link">Home</a>
+            <a href="#" class="nav-link">Help</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="form-container verification-container">
+            <h2>Enter Code</h2>
+            <!-- Ideally, mention if code was sent via email or SMS based on previous step -->
+            <p class="sub-description">Please enter the 5-digit verification code sent to your chosen contact method.</p>
+
+            <!-- Form submits to backend for validation or directly to success page for demo -->
+            <form action="success.html" method="post"> <!-- Redirect to success.html -->
+                <div class="code-input-group">
+                    <input type="text" class="code-input" maxlength="1" required pattern="[0-9]" inputmode="numeric">
+                    <input type="text" class="code-input" maxlength="1" required pattern="[0-9]" inputmode="numeric">
+                    <input type="text" class="code-input" maxlength="1" required pattern="[0-9]" inputmode="numeric">
+                    <input type="text" class="code-input" maxlength="1" required pattern="[0-9]" inputmode="numeric">
+                    <input type="text" class="code-input" maxlength="1" required pattern="[0-9]" inputmode="numeric">
+                </div>
+                <!-- Add a resend code link here (would require JS/backend) -->
+                <div class="resend-link">
+                    Didn't receive code? <a href="#">Resend</a>
+                </div>
+
+                <div class="button-group">
+                    <button type="button" class="btn btn-primary" onclick="window.location.href='Success_Test.html'">Verify Code</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <!-- Optional JS for auto-focusing next input box -->
+    <!-- <script src="../js/main.js"></script> -->
+</body>
+</html>

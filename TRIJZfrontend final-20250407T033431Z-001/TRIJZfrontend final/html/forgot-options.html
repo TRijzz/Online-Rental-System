@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRATA - Forgot Password Options</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/forms.css">
+    <link rel="stylesheet" href="../css/forgot-password.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="logo">
+            <img src="../assets/images/logo.png" alt="PRATA Logo" class="logo-image">
+            <span>PRATA</span>
+        </div>
+        <div class="nav-links">
+            <a href="signin.html" class="nav-link">Home</a>
+            <a href="Report.html" class="nav-link">Help</a>
+        </div>
+    </nav>
+
+    <div class="back-button-wrapper">
+        <button class="back-button">← Back</button>
+    </div>
+
+    <main class="main-content">
+        <div class="form-container forgot-password-container">
+            <h2>Forgot Password</h2>
+            <p class="description">Make Selection</p>
+            <p class="sub-description">How would you like to receive the verification code?</p>
+
+            <div class="verification-options">
+                <!-- Email Option -->
+                <div class="verification-option">
+                    <div class="option-header">
+                        <h3>Via Email</h3>
+                        <div class="contact-info">
+                            <input type="email" name="email" class="contact-input" placeholder="user@example.com" required>
+                        </div>
+                    </div>
+                    <form action="verification.html" method="get">
+                        <input type="hidden" name="method" value="email">
+                        <button type="submit" class="btn btn-primary">Send Code to Email</button>
+                    </form>
+                </div>
+
+                <div class="option-divider">
+                    <span>OR</span>
+                </div>
+
+                <!-- SMS Option -->
+                <div class="verification-option">
+                    <div class="option-header">
+                        <h3>Via SMS</h3>
+                        <div class="contact-info">
+                            <input type="tel" name="phone" class="contact-input" placeholder="+977 123456789" required>
+                        </div>
+                    </div>
+                    <form action="verification.html" method="get">
+                        <input type="hidden" name="method" value="sms">
+                        <button type="submit" class="btn btn-primary">Send Code via SMS</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

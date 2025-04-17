@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRATA - Sign In</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+    <!-- Base and Form Styles -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/forms.css">
+    <!-- Page Specific Styles -->
+    <link rel="stylesheet" href="../css/signin.css">
+</head>
+<body>
+    <nav class="top-nav">
+       <div class="logo">
+            <img src="../assets/images/logo.png" alt="PRATA Logo" class="logo-image">
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="Report.html" class="nav-link">Help</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="form-container signin-container">
+            <h2>Sign In</h2>
+            <form action="dashboard.html" method="post">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    <a href="forgot-options.html" class="form-link">Forgot your password?</a>
+                </div>
+
+                <div class="button-group">
+                    <button type="submit" class="btn btn-primary">Sign In</button>
+                </div>
+            </form>
+
+            <div class="social-login">
+                 <p>Or sign in with:</p>
+                <button type="button" class="social-btn google"><span class="icon">G</span> Sign In with Google</button>
+                <button type="button" class="social-btn facebook"><span class="icon">f</span> Sign In with Facebook</button>
+                <button type="button" class="social-btn apple"><span class="icon"></span> Sign In with Apple</button>
+            </div>
+
+            <div class="bottom-link">
+                Don't have an account? <a href="signup.html" class="signup-link">Create one</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

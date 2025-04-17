@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRATA - Feedback</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/Report.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="logo">
+            <img src="../assets/images/logo.png" alt="PRATA Logo" class="logo-image">
+            <span>PRATA</span>
+        </div>
+        <div class="nav-links">
+            <a href="signin.html" class="nav-link">Home</a>
+        </div>
+    </nav>
+
+    <div class="back-button-wrapper">
+        <button class="back-button">← Back</button>
+    </div>
+
+    <main class="main-content">
+        <div class="form-container report-container">
+            <header>
+                <img src="../assets/images/feedback-icon.png" alt="Feedback Logo" class="feedback-logo">
+                <h1>Feedback</h1>
+            </header>
+            
+            <form class="report-form" action="Success_Report.html" method="GET">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="issue">Issue:</label>
+                    <input type="text" id="issue" name="issue" required>
+                </div>
+                <div class="form-group">
+                    <label for="reason">Reason:</label>
+                    <textarea id="reason" name="reason" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
